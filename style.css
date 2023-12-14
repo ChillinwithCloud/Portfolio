@@ -1,0 +1,102 @@
+
+
+
+#Nameatthetop{
+    background-color: #314233;
+    display: flex;
+    list-style-type: "✦";
+    color: orangered;
+    font-family: 'Caveat Brush', cursive;
+    font-size:x-large;
+   
+}
+
+#button{
+    text-decoration: none;
+    background-color: #eaa81f;
+    padding: 5px 5px;
+    display: inline-block;
+    color:black;
+    border: 2px solid black;
+    border-radius: 20px;
+    transition: all 0.5s;
+    font-family: 'Just Another Hand', cursive;
+    height: 30px;
+    width: 60px;
+    font-size: large;
+}
+#button:hover{
+    background-color: black;
+    color: #eaa81f;
+    border-color: black;
+}
+nav{
+    background-color: #314233;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:  5px;
+    
+}
+body{
+    background-color: #ece4d8;
+}
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 60px;
+}
+.bannerText{
+    flex: 1;
+    border: #EACCAC solid 5px;
+    background-color:#F4E1C8;
+}
+
+.bannerText h1{
+    font-size: 50px;
+    font-family: 'Water Brush', cursive;
+    
+}
+.bannerText p{
+    
+    font-size: 0.9rem; 
+    padding: 10px 0;
+    
+}
+.bannerImg{
+    flex: 1;
+    position: relative;
+    left: -150px;
+    top: -30px;
+}
+@media only screen and (min-width: 500px) and (max-width: 850px){
+html{
+    font-size: 16px;
+}
+.bannerImg{
+    left: 10px;
+    top: -150px;
+
+}
+.bannerText{
+    height: 500px;
+}
+.bannerText p{
+    text-align:center;
+}
+.bannerText h1{
+    text-align: center;
+}
+}
+@media only screen and (max-width:500px){
+    .bannerImg{
+        left: 20px;
+    }
+    .bannerText {
+    text-align: center;
+    }
+    #button{
+        overflow:auto;
+    }
+}
